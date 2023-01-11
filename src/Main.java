@@ -5,7 +5,11 @@ public class Main {
 
         Restaurant restaurant1 = new Restaurant();
 
+        restaurant1.openRestaurant();
+
         restaurant1.findTable();
+
+        restaurant1.checkIfTableCanBeFreed();
 
     }
 }

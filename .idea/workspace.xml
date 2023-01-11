@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae40894f-b6db-495a-987e-abe9a6c83103" name="Changes" comment="restaurant  find  table function">
+    <list default="true" id="ae40894f-b6db-495a-987e-abe9a6c83103" name="Changes" comment="finished find table function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -83,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673436906439</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finished find table function">
+      <created>1673438909845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673438909845</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -91,6 +98,7 @@
     <MESSAGE value="fixed Restaurant variables" />
     <MESSAGE value="started some  functions on restaurant class" />
     <MESSAGE value="restaurant  find  table function" />
-    <option name="LAST_COMMIT_MESSAGE" value="restaurant  find  table function" />
+    <MESSAGE value="finished find table function" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished find table function" />
   </component>
 </project>

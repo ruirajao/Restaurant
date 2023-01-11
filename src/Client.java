@@ -9,6 +9,10 @@ public class Client {
         this.clientNumber = clientNumber;
     }
 
+    public float getBill() {
+        return bill;
+    }
+
     public int getTableNumber() {
         return tableNumber;
     }

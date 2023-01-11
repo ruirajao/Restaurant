@@ -50,6 +50,7 @@ public class Table {
 
     }
     public void unOccupy(){
+        free  = true;
 
     }
 
