@@ -1,7 +1,12 @@
 public class Main {
+
+
     public static void main(String[] args) {
 
+        Restaurant restaurant1 = new Restaurant();
 
-        System.out.println();
+        restaurant1.findTable();
+
+
     }
 }

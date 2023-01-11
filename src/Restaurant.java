@@ -4,7 +4,7 @@ public class Restaurant {
     private   Client [] clients = new Client[50];
     private Boolean fullCapacity;
     private int numberOfOccupiedTables;
-    private Table [] tables = new Table[15];
+    private Table [] tables = new Table[10];
 
     private static int restaurantCount;
 
@@ -14,15 +14,25 @@ public class Restaurant {
             tables[i] = new Table(false, "", i+1);
         }
 
+        for (int c = 0; c < clients.length; c++){
+            clients[c] = new Client(c+1, (int)(Math.random()*10 + 1));
+        }
+
     }
 
     public void findTable() {
 
         for(int k=0; k < tables.length; k++){
-            if(tables[k].isFree()){
+            if(tables[k].isFree() && clients[k].getClientNumber() < 6){
                 tables[k].setFree(false);
-                System.out.println("Clients sat on table number: " + tables[k].getTableNumber());
+                System.out.println(clients[k].getClientNumber() + " clients sat on table number: " + tables[k].getTableNumber());
+            }else {
+                System.out.println(clients[k].getClientNumber() + " Clients need table. No table that can hold more than 5 clients");
+
             }
+
+            System.out.println("=".repeat(30));
+
         }
     }
 
