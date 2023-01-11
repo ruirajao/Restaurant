@@ -3,6 +3,11 @@ public class Client {
     private int tableNumber;
     private int clientNumber;
 
+    public Client(int tableNumber, int clientNumber) {
+        this.tableNumber = tableNumber;
+        this.clientNumber = clientNumber;
+    }
+
     public int getTableNumber() {
         return tableNumber;
     }
@@ -20,11 +25,11 @@ public class Client {
     }
 
     public String askForTable() {
-
         return "I need a table";
     }
 
-    public void order() {
+    public String order() {
+        return "Ordering";
 
     }
 
