@@ -9,6 +9,8 @@ public class Main {
 
         restaurant1.findTable();
 
+        restaurant1.getClientCounter();
+
         restaurant1.checkIfTableCanBeFreed();
 
     }

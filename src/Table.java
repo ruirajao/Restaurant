@@ -4,11 +4,13 @@ public class Table {
     private boolean free ;
     private String order;
     private int tableNumber;
+    private double billTotal;
 
-    public Table(boolean free, String order, int tableNumber) {
+    public Table(boolean free, String order, int tableNumber, double billTotal) {
         this.free = free;
         this.order = order;
         this.tableNumber = tableNumber;
+        this.billTotal  = billTotal;
     }
 
     public boolean getFree(){
