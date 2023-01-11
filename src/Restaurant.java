@@ -42,7 +42,7 @@ public class Restaurant {
         System.out.println("+".repeat(30));
     }
 
-    public void findTable() { // é  necessario fazer com  que nao salte mesas quando numClientes > 5
+    public void findTable() {
 
         boolean allEqual = Arrays.asList(tables).contains(true);
 
