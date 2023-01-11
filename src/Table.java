@@ -1,7 +1,7 @@
 public class Table {
 
     //assuming that every table can sit 5 clients
-    private boolean free;
+    private boolean free ;
     private String order;
     private int tableNumber;
 
@@ -11,6 +11,9 @@ public class Table {
         this.tableNumber = tableNumber;
     }
 
+    public boolean getFree(){
+        return free;
+    }
 
     public void setFree(boolean free) {
         this.free = free;
@@ -34,12 +37,13 @@ public class Table {
     public void getOrder(){
 
     }
-    public boolean isFree(){
-        free = true;
-        return true;
+    public String isFree(){
+        if (free == true);
+        return "Table " + tableNumber + " is free";
 
     }
     public void occupy(){
+        free=false;
 
     }
     public void saveOrder(){

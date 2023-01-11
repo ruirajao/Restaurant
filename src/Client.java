@@ -2,6 +2,7 @@ public class Client {
 
     private int tableNumber;
     private int clientNumber;
+    private float bill;
 
     public Client(int tableNumber, int clientNumber) {
         this.tableNumber = tableNumber;
@@ -25,15 +26,17 @@ public class Client {
     }
 
     public String askForTable() {
-        return "I need a table";
+        return "Client " + clientNumber + " needs a table";
     }
 
     public String order() {
-        return "Ordering";
+        return "Client " + clientNumber + "ordering";
 
     }
 
-    public void pay() {
+    public String pay() {
+        bill = 0;
+        return "Bill has been payed";
 
     }
 

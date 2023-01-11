@@ -7,6 +7,5 @@ public class Main {
 
         restaurant1.findTable();
 
-
     }
 }
