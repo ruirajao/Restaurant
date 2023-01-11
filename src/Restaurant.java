@@ -1,11 +1,13 @@
+import java.sql.Array;
+
 public class Restaurant {
-    public String c [] Client = new Client[];
-    public Boolean fullCapacity;
-    public int numberofOccupiedTables;
+    private   Client [] clients = new Client[50];
+    private Boolean fullCapacity;
+    private int numberofOccupiedTables;
 
-    public static int restaurantCount;
+    private static int restaurantCount;
 
-    public int tables [] Table = new Table[];
+    private Table [] tables = new Table[15];
 
     public void Restaurant() {
 
