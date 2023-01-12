@@ -87,7 +87,7 @@ public class Restaurant {
                 tables[tableCount].setClientsPerTable(clients[k].getClientNumber());
                 tableCount++;
             } else {
-                System.out.println(clients[k].getClientNumber() + " Clients need table. No table that can hold more than 5 clients");
+                System.out.println(clients[k].getClientNumber() + " clients showed up but tables can only hold a maximum of 5 clients");
                 System.out.println("Table " + tables[tableCount].getTableNumber() + " is free");
                 // tables[k].setFree(true);
             }
