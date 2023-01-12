@@ -21,7 +21,7 @@ public class Restaurant {
         Table [] tables = new Table[10];
         */
         for (int i = 0; i < tables.length; i++) {
-            tables[i] = new Table(true, "", i + 1, 0);
+            tables[i] = new Table(true, "", i + 1, 0,0);
         }
 
         for (int c = 0; c < clients.length; c++) {
@@ -44,7 +44,7 @@ public class Restaurant {
 
     public void findTable() {
 
-        boolean allEqual = Arrays.asList(tables).contains(true);
+        //boolean allEqual = Arrays.asList(tables).contains(true);
 
         /*int x = 0;
         while (allEqual == false) {
@@ -80,10 +80,11 @@ public class Restaurant {
 
         int tableCount = 0;
         for (int k = 0; k < clients.length; k++) {
-            if (clients[k].getClientNumber() < tableLimit && tables[tableCount].getFree() == true) {
-                tables[k].setFree(false);
+            if (clients[k].getClientNumber() <= tableLimit && tables[tableCount].getFree() == true) {
+                tables[tableCount].setFree(false);
                 System.out.println(clients[k].getClientNumber() + " clients sat on table number: " + tables[tableCount].getTableNumber());
                 clientCounter += clients[k].getClientNumber();
+                tables[tableCount].setClientsPerTable(clients[k].getClientNumber());
                 tableCount++;
             } else {
                 System.out.println(clients[k].getClientNumber() + " Clients need table. No table that can hold more than 5 clients");

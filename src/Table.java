@@ -5,12 +5,22 @@ public class Table {
     private String order;
     private int tableNumber;
     private double billTotal;
+    private int  clientsPerTable;
 
-    public Table(boolean free, String order, int tableNumber, double billTotal) {
+    public Table(boolean free, String order, int tableNumber, double billTotal,  int clientsPerTable) {
         this.free = free;
         this.order = order;
         this.tableNumber = tableNumber;
         this.billTotal  = billTotal;
+        this.clientsPerTable =clientsPerTable;
+    }
+
+    public int getClientsPerTable() {
+        return clientsPerTable;
+    }
+
+    public void setClientsPerTable(int clientsPerTable) {
+        this.clientsPerTable = clientsPerTable;
     }
 
     public boolean getFree(){
